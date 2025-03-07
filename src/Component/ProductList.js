@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-const products = [
+const product = [
   { id: 1, name: "Laptop", price: 1000 },
   { id: 2, name: "Phone", price: 500 },
   { id: 3, name: "Tablet", price: 700 },
 ];
 
 const ProductList = () => {
-  const [data, setData] = useState(0)
+  const [data, setData] = useState([])
 
 
   const getData = () =>{
@@ -17,7 +17,8 @@ const ProductList = () => {
   }
   useEffect(()=>{
     getData()
-  },[])      
+  },[])   
+
   return (
     <ul>
       {data.length > 0 && data?.map((product) => (

@@ -23,6 +23,11 @@ import Examples from './Component/Toto/Examples';
 import ShortCiruit from './Component/Toto/ShortCiruit';
 import AdvanceHook from './Component/Hook/AdvanceHook';
 import FirstForm from './Component/ReactForm/FirstForm';
+import CrudApp from './Crud/CrudApp';
+import CrudOperation from './Crud/CrudOperation';
+import UseEffect from './Component/Hook/UseEffect';
+import UseEffectExample from './Component/Hook/UseEffectExample';
+import ApiIndex from './Component/API/ApiIndex';
 
 
 function App() {
@@ -62,7 +67,12 @@ function App() {
      {/* <Examples/> */}
      {/* <ShortCiruit/> */}
      {/* <AdvanceHook/> */}
-     <FirstForm/>
+     {/* <FirstForm/> */}
+     {/* <CrudApp/> */}
+     {/* <CrudOperation/> */}
+     {/* <UseEffect/> */}
+     <UseEffectExample/>
+     {/* <ApiIndex/> */}
     </div>
   );
 }
