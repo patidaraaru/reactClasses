@@ -30,6 +30,7 @@ import UseEffectExample from './Component/Hook/UseEffectExample';
 import ApiIndex from './Component/API/ApiIndex';
 import CountEffect from './Component/Hook/CountEffect';
 import TimeIntervalEffect from './Component/Hook/TimeIntervalEffect';
+import ApiCall from './Component/API/ApiCall';
 
 
 function App() {
@@ -76,7 +77,8 @@ function App() {
      {/* <UseEffectExample/> */}
      {/* <ApiIndex/> */}
      {/* <CountEffect/> */}
-     <TimeIntervalEffect/>
+     {/* <TimeIntervalEffect/> */}
+     <ApiCall/>
     </div>
   );
 }
