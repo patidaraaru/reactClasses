@@ -28,6 +28,8 @@ import CrudOperation from './Crud/CrudOperation';
 import UseEffect from './Component/Hook/UseEffect';
 import UseEffectExample from './Component/Hook/UseEffectExample';
 import ApiIndex from './Component/API/ApiIndex';
+import CountEffect from './Component/Hook/CountEffect';
+import TimeIntervalEffect from './Component/Hook/TimeIntervalEffect';
 
 
 function App() {
@@ -71,8 +73,10 @@ function App() {
      {/* <CrudApp/> */}
      {/* <CrudOperation/> */}
      {/* <UseEffect/> */}
-     <UseEffectExample/>
+     {/* <UseEffectExample/> */}
      {/* <ApiIndex/> */}
+     {/* <CountEffect/> */}
+     <TimeIntervalEffect/>
     </div>
   );
 }

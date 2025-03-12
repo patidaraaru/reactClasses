@@ -75,7 +75,7 @@ const FirstForm = () => {
         />
         <br />
         <br />
-        <button type="submit">submit</button>
+        <button type="submit" className="TheamBtn">submit</button>
       </form>
     </div>
   );
