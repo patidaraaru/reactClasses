@@ -15,7 +15,7 @@ const ApiCall = () => {
 
   return (
     <Box justifyContent="center">
-      <Card sx={{ borderRadius: 2, boxShadow: 3, maxWidth: 345 }}>
+      <Card sx={{ borderRadius: 2, boxShadow: 3, maxWidth: 345 }} >
         <CardMedia
           component="img"
           height="200"
