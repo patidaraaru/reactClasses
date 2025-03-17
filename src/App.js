@@ -38,7 +38,8 @@ import ApiPost from "./Component/API/ApiPost";
 import LoginButton from "./Component/createContext/LoginButton";
 import Login from "./Component/createContext/Login";
 import Counter from "./Component/ExampleCreateContext/Counter";
-import FocusInput from "./Component/UseRefHook/FocusInput";
+import HodComponent from "./Component/HighOrderComponent/HodComponent";
+
 
 function App() {
   return (
@@ -91,7 +92,8 @@ function App() {
       {/* <ApiPost /> */}
       {/* <Login/> */}
       {/* <Counter/> */}
-      <FocusInput/>
+      <HodComponent/>
+   
     </div>
   );
 }
