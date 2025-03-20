@@ -40,6 +40,19 @@ import Login from "./Component/createContext/Login";
 import Counter from "./Component/ExampleCreateContext/Counter";
 import HodComponent from "./Component/HighOrderComponent/HodComponent";
 
+import ContextConsumer from "./Component/ExampleCreateAnotherContext/ContextConsumer";
+import ContextProvider from "./Component/ExampleCreateAnotherContext/ContextProvider";
+import ContextDataProvider from "./Component/ExampleCreateAnotherContext/ContextDataProvider";
+import CreateLoginDataProvider from "./Component/ExampleCreateLoginContext/CreateLoginDataProvider";
+import Timer from "./Component/UseRef/Timer";
+import PassingValueUseref from "./Component/UseRef/PassingValueUseref";
+import Weather from "./Component/Weather";
+import Index from "./Component/Toto/TodoExample/Index";
+import DarkMode from "./Component/DarkMode";
+import TimerDate from "./Component/TimerDate";
+import AddArray from "./Component/Array/Object/AddArray";
+import ArrayMethod from "./Component/Array/ArrayMethod";
+
 
 function App() {
   return (
@@ -90,9 +103,21 @@ function App() {
       {/* <LocalStorage/> */}
       {/* <ApiAwait/> */}
       {/* <ApiPost /> */}
-      {/* <Login/> */}
+   
       {/* <Counter/> */}
-      <HodComponent/>
+      {/* <HodComponent/> */}
+      {/* <ContextConsumer/> */}
+      {/* <ContextDataProvider/> */}
+      {/* <CreateLoginDataProvider/> */}
+      {/* <Timer/> */}
+      {/* <PassingValueUseref/> */}
+      {/* <Weather/> */}
+      {/* <Index/> */}
+      {/* <DarkMode/> */}
+      {/* <TimerDate/> */}
+      {/* <AlphaCount/> */}
+      {/* <AddArray/> */}
+      <ArrayMethod/>
    
     </div>
   );

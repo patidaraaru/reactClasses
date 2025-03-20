@@ -30,17 +30,16 @@ const Todo = () => {
     setInputValue("");
   };
 
-
   const [time, setTime] = useState(new Date());
   const FormateDate = time.toLocaleDateString();
   const FormateTime = time.toLocaleTimeString();
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(new Date()); // Updates the time every second
+      setTime(new Date()); 
     }, 1000);
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval);
   }, []);
   const HandleDeleteButton = (value) => {
     console.log(target);
