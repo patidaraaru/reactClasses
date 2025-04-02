@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 const AddArray = () => {
   const [addArray, setaddArray] = useState([]);
   const [newArray, setnewArray] = useState();
+  const [EditIndex, setEditIndex] = useState();
 
   const handleClick = (index) => {
     if (newArray.trim()) {
@@ -22,18 +23,27 @@ const AddArray = () => {
   const HandleClear = () => {
     setaddArray([]);
   };
+  const HandleEdit = (index) => {
+    setnewArray(addArray[index]);
+    setEditIndex(index);
+  };
 
   return (
     <div>
       <h2>Add array list with the help of array method</h2>
       <input type="text" onChange={HandleChange} value={newArray} />
-      <Button onClick={handleClick}>Click</Button>
+      <Button onClick={handleClick}>
+       Added
+      </Button>
       <ul>
         {addArray.map((item, index) => (
           <li key={index}>
             <span>{item}</span>
             <Button type="button" onClick={() => HandleDlt(item)}>
               Dlt
+            </Button>
+            <Button type="button" onClick={() => HandleEdit(index)}>
+              Edit
             </Button>
           </li>
         ))}

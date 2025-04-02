@@ -52,6 +52,8 @@ import DarkMode from "./Component/DarkMode";
 import TimerDate from "./Component/TimerDate";
 import AddArray from "./Component/Array/Object/AddArray";
 import ArrayMethod from "./Component/Array/ArrayMethod";
+import Crud from "./Component/Crud/Crud";
+import IndexData from "./Component/Temperature/Index";
 
 
 function App() {
@@ -117,7 +119,10 @@ function App() {
       {/* <TimerDate/> */}
       {/* <AlphaCount/> */}
       {/* <AddArray/> */}
-      <ArrayMethod/>
+      {/* <ArrayMethod/> */}
+      {/* <Crud/> */}
+      <IndexData />
+      
    
     </div>
   );
