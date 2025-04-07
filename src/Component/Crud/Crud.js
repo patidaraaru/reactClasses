@@ -12,7 +12,6 @@ const Crud = () => {
   };
   const HandleClick = () => {
     if (content.trim() === "") return;
-
     if (edit !== null) {
       const updatedInput = [...input];
       updatedInput[edit] = content;

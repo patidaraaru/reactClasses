@@ -54,6 +54,9 @@ import AddArray from "./Component/Array/Object/AddArray";
 import ArrayMethod from "./Component/Array/ArrayMethod";
 import Crud from "./Component/Crud/Crud";
 import IndexData from "./Component/Temperature/Index";
+import DataTable from "./Component/Temperature/DataTable";
+import Series from "./Component/Series/Index";
+import SignUP from "./Component/ReactForm/SignUP";
 
 
 function App() {
@@ -121,8 +124,10 @@ function App() {
       {/* <AddArray/> */}
       {/* <ArrayMethod/> */}
       {/* <Crud/> */}
-      <IndexData />
-      
+      {/* <IndexData /> */}
+      {/* <DataTable/> */}
+     {/* <Series/> */}
+      {/* <SignUP/> */}
    
     </div>
   );

@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const SignUP = () => {
     const [user,setName] = useState()
     const [password,setPassword] = useState("")
 
-   
+     useEffect(() => {
+       const storedData = localStorage.getItem("products");
+       console.log(storedData)
+     }, []);
     const handleSubmit = (event)=>{
          event.preventDefault()
          const dataAdd = {
@@ -12,6 +15,7 @@ const SignUP = () => {
           password:password,
          }
          console.log(dataAdd)
+         localStorage.setItem("products", JSON.stringify(dataAdd));
     }
   return (
     <div>
@@ -29,6 +33,7 @@ const SignUP = () => {
          name='password'
          required
          onChange={(event)=>setPassword(event.target.value)}/>
+         <button type='submit'>Submit</button>
       </form>
     </div>
   )
