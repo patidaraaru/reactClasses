@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Table } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 const DataTable = () => {
   const [products, setProducts] = useState({
@@ -12,7 +12,17 @@ const DataTable = () => {
   useEffect(() => {
     const storedData = localStorage.getItem("products");
     if (storedData) {
-      setData(JSON.parse(storedData));
+      try {
+        const parsed = JSON.parse(storedData);
+        if (Array.isArray(parsed)) {
+          setData(parsed);
+        } else {
+          setData([]);
+        }
+      } catch (error) {
+        console.error("Invalid JSON in localStorage");
+        setData([]);
+      }
     }
   }, []);
 

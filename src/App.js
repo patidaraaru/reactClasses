@@ -57,6 +57,9 @@ import IndexData from "./Component/Temperature/Index";
 import DataTable from "./Component/Temperature/DataTable";
 import Series from "./Component/Series/Index";
 import SignUP from "./Component/ReactForm/SignUP";
+import SumAdded from "./Component/Numeric/SumAdded";
+import Card from "./Card/Index";
+import QuantityCard from "./Card/QuantityCard";
 
 
 function App() {
@@ -128,7 +131,9 @@ function App() {
       {/* <DataTable/> */}
      {/* <Series/> */}
       {/* <SignUP/> */}
-   
+      {/* <SumAdded/> */}
+      {/* <Card/> */}
+      <QuantityCard/>
     </div>
   );
 }
