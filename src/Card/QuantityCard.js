@@ -18,7 +18,7 @@ const QuantityCard = () => {
     }
     localStorage.setItem("price", JSON.stringify(price));
   };
-  
+
   console.log(price);
   return (
     <>
